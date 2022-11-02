@@ -1,0 +1,230 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url(images.jfif);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container
+{
+	position:absolute;
+	top: 95%;
+	left: 75%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	background: #fff;
+	padding: 45px;
+	box-sizing: border-box;
+	border :1px solid rgba(0,0,0,.1);
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+h2{
+	color: white;
+	margin-left: 30px;
+	font-family:Georgia, 'Times New Roman', Times, serif
+}
+.container h2
+{
+	color: white;
+	text-align: left;
+	margin: 0 0 40px;
+	padding: 0;
+	color: rgb(66,133,244);
+	letter-spacing: 2px;
+}
+
+.form-box{
+}
+
+.form-inner{
+	border: 3px rgb(75, 15, 195) solid;
+	background-color: black;
+	margin-bottom: 40px;
+
+}
+
+/* refresh button style */
+#button-cancel{
+	border: 3px red solid;
+	font-weight: bold;
+	border-radius: 10px;
+	padding: 10px;
+	text-transform: capitalize;
+	position:relative;
+	
+
+}
+/* submit button style */
+#btn{
+	border: 3px rgb(79, 230, 14) solid;
+	font-weight: bold;
+	border-radius: 10px;
+	padding: 10px;
+	text-transform: capitalize;
+float: right;	
+}
+
+/* form div container removes excess space on right of form */
+#form-user{
+width: fit-content;
+background-color: rgb(78, 139, 25);
+padding: 42px;
+border: 22px rgb(29, 100, 215) solid;
+margin-left: 30px;
+}
+
+.container input
+{
+	padding: 5px;
+	margin-bottom: 30px;
+	width: 55%;
+	box-sizing: border-box;
+	box-shadow: none;
+	outline: none;
+	border:none;
+	border-bottom: 2px solid #999;
+}
+.container input[type="submit"]
+{
+	border-radius: 25px;
+	font-size: 20px;
+	height: 40px;
+	cursor : pointer;
+	background: rgb(66,133,244);
+	color: #fff;
+	margin-bottom: 0;
+}
+.container input[type="submit"]:hover
+{
+	background: #34F458;
+	color: #fff;
+}
+.container form div
+{
+	position: relative;
+}
+.container form div label
+{
+	position: absolute;
+	top: 3px;
+	pointer-events: none;
+	left: 0;
+	transition: .5s;
+}
+.container input:focus ~label,
+.container input:valid ~label
+{
+	left: 0;
+	top: -20px;
+	color: rgb(66,133,244);
+	font-size: 12px;
+	font-weight: bold;
+}
+.container input:focus,
+.container input:valid
+{
+	border-bottom: 2px solid rgb(66,133,244);
+}
+.error_form
+{
+	top: 12px;
+	color: rgb(216, 15, 15);
+    font-size: 15px;
+    font-family: Helvetica;
+} 
+
+#para1 ,#para2 ,#para3 ,#para4{
+	color: white;
+}
+
+
+label{
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+	color: #fff;
+}
+
+/* table styling section */
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent; 
+}
+
+
+
+/* Formats table and form simultaniously to create even spacing and set border */
+#formId, #table-container{
+  padding: 1rem;
+  vertical-align: middle;
+  margin: 12px;
+}
+
+/* Allignes table and input form side by side and remove gap between cells.
+This also sets table max height and prevents over flow of table when values get excerssively too large */
+table{
+  display: flex;
+  border-collapse: collapse;
+  text-align: center;
+	flex-wrap: wrap;
+  height: 400px;
+  overflow: auto;
+
+}
+
+/* all rows rows styling*/
+table tr{
+	border: 2px black solid;
+}
+
+table td{
+border: 2px black solid;
+color: white;
+
+}
+
+.wrapper{
+  width: 100%;
+}
+thead{
+  color: white;
+}
+
+/* Highlights alternating rows with even values */
+tr:nth-child(even) {  
+   background-color:#51b39a;   
+} 
+
+/* far left column prevent from scrolling and style */
+td:nth-child(1) {  background-color: black;
+	color: red;
+	position: sticky;
+  width: 2em;
+  left: 0;
+  top: auto;
+	border: 5px rgb(229, 17, 84) solid;
+
+}
+
+/* top column prevent from scrolling and style */
+ tr:nth-child(1){
+	background-color:rgb(4, 4, 4) ;
+	position: sticky;
+  width: 2em;
+	color: red;
+  top: 0px;
+	left: 0px;
+	border: 5px rgb(229, 17, 84) solid;
+ }
+
+ /* footer at bottom right of page style and positioning */
+#copyRight{ 
+  border: 1px black solid;
+  position: absolute;
+  bottom: -80px;
+  right: .5%;
+	color: white;
+}

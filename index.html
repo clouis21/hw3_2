@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Tutorial</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+<header>
+    <h2 class="header1">
+      Multiplication Table Generator, Version 1
+    </h2>
+</header>
+
+    <div class="wrapper"> 
+
+<!-- form action cehck that...input is a number -->
+      <form id="form-user" action=" " method="">
+
+        <h5>For negative values use toggle</h5>
+
+        <div class="form-inner">
+            <div class="form-box error" data-errormsg="">
+              <label for="a">INPUT 1</label>
+              <input type="number" id="a" name="a" oninput="this.value=(parseInt(this.value)||0)" required  value="0"  tabindex="1"/>
+              <p id="para1"></p>
+            </div>
+
+            <div class="form-box error" data-errormsg="">
+              <label for="b">INPUT 2</label>
+              <input type="number" id="b" name="b" oninput="this.value=(parseInt(this.value)||0)" required   value="0"  tabindex="1"/>
+              <p id="para2"></p>
+            </div>
+
+            <div class="form-box error" data-errormsg="">
+              <label for="c">INPUT 3</label>
+              <input type="number" id="c" name="c" oninput="this.value=(parseInt(this.value)||0)" required   value="0"  tabindex="1"/>
+              <p id="para3"></p>
+            </div>
+
+            <div class="form-box error" data-errormsg="">
+              <label for="d">INPUT 4</label>
+              <input type="number" id="d" name="d" oninput="this.value=(parseInt(this.value)||0)" required   value="0" tabindex="1"/>
+              <p id="para4"></p>
+            </div> 
+        </div>
+
+        <div class="form-box">
+            <button type="reset" id="button-cancel" onClick="window.location.reload()"
+            >RESET</button>
+            <button type="submit" id="btn" onclick="multiplyTable(
+            document.getElementById('a').value,
+            document.getElementById('b').value,
+            document.getElementById('c').value,
+            document.getElementById('d').value)"
+            )>LOAD</button>
+        </div>
+      </form>
+
+      <div id="table-container">
+                
+        <table>
+          <tbody>
+            
+          </tbody>
+        </table>
+
+    </div>
+  </div>
+
+    
+    <script src="hw4.js"></script><br>
+
+    <footer id="copyRight"> © 2022 Hw3 UML. Chad louis inc all rights reserved.</footer>
+
+</body>
+</html>
+<!-- source of help google/stack overflow -->
